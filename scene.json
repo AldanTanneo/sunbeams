@@ -1,0 +1,106 @@
+{
+   "camera": {
+      "origin": [
+         10.0,
+         3.0,
+         10.0
+      ],
+      "look_at": [
+         0.0,
+         2.0,
+         0.0
+      ],
+      "vfov": 30.0,
+      "aspect_ratio": [
+         16,
+         9
+      ],
+      "up": [
+         0.0,
+         1.0,
+         0.0
+      ]
+   },
+   "image": {
+      "height": 1080,
+      "samples": 5000,
+      "max_bounces": 15,
+      "background": "#000000"
+   },
+   "materials": {
+      "ground": {
+         "kind": "diffuse",
+         "colour": "#dddddd"
+      },
+      "blue": {
+         "kind": "dielectric",
+         "colour": "#8bc5f1",
+         "index": 1.5,
+         "fuzziness": 0.0
+      },
+      "gold": {
+         "kind": "specular",
+         "colour": "#d69e04",
+         "roughness": 0.5
+      },
+      "light": {
+         "kind": "emissive",
+         "colour": "#ffffff",
+         "intensity": 15.0
+      }
+   },
+   "objects": [
+      {
+         "kind": ".norm",
+         "filename": "models/teapot_surface1.norm",
+         "material": "blue",
+         "translate": [
+            0.0,
+            2.5,
+            0.0
+         ],
+         "scale": 1.0,
+         "rotate": [
+            0.15,
+            0.5,
+            0.0
+         ]
+      },
+      {
+         "kind": ".norm",
+         "filename": "models/teapot_surface1.norm",
+         "material": "gold",
+         "translate": [
+            0.0,
+            0.0,
+            1.0
+         ],
+         "scale": 0.5,
+         "rotate": [
+            0.0,
+            0.1,
+            0.0
+         ]
+      },
+      {
+         "kind": "sphere",
+         "center": [
+            0.0,
+            -1000.0,
+            0.0
+         ],
+         "radius": 1000.0,
+         "material": "ground"
+      },
+      {
+         "kind": "sphere",
+         "center": [
+            -1.0,
+            5.0,
+            3.0
+         ],
+         "radius": 1.0,
+         "material": "light"
+      }
+   ]
+}

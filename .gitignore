@@ -1,0 +1,7 @@
+.vscode/
+
+/obj/
+/bin/
+/share/
+/alire/
+/config/

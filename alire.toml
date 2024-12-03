@@ -1,0 +1,23 @@
+name = "sunbeams"
+description = "A toy raytracer in Ada"
+version = "0.1.0-dev"
+
+authors = ["Cesar SAGAERT"]
+maintainers = ["Cesar SAGAERT <sagaert@adacore.com>"]
+maintainers-logins = ["AldanTanneo"]
+licenses = "GPL-3.0-or-later"
+website = ""
+tags = []
+
+executables = ["sunbeams"]
+
+[build-switches]
+"*".ada_version = "Ada2022"
+# release.runtime_checks = "none"
+development.optimization = ["-O3"]
+
+[[depends-on]]
+image_io = "^20240725.0.0"
+
+[[depends-on]]
+json = "^6.0.0"
